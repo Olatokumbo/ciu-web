@@ -1,15 +1,16 @@
-'use client'
+'use client';
 import Image from "next/image";
 import { StickyNavbar } from "./components/navbar";
 import { Button } from "@material-tailwind/react";
-import InfoSection from "./components/info-section";
+import AboutUsSection from "./components/about-us-section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-full bg-[#003334] px-5 md:px-5 lg:px-14">
+    <main className="flex flex-col w-full min-h-screen bg-[#003334] px-5 md:px-5 lg:px-14">
       <StickyNavbar />
-      <div className="relative w-full h-full">
-        <div className="absolute w-fit pr-10 py-5 md:py-10 lg:py-16 lg:pr-20 z-10 left-0 bottom-0 bg-[#003334] rounded-tr-lg border-t-4 border-r-4">
+      <div className="relative flex items-center justify-center w-full h-full">
+        <img className="rounded-2xl border-white border-4 w-full h-full object-cover" src="/cover.webp" alt="Cover Image" />
+        <div className="absolute flex bottom-0 left-0 flex-col items-start w-fit pr-10 py-5 md:py-10 lg:py-16 lg:pr-20 z-10 bg-[#003334] rounded-tr-lg border-t-4 border-r-4">
           <h1 className="font-bold text-2xl sm:text-3xl md:text-6xl text-white">Welcome to CIU</h1>
           <h1 className="font-light text-xs md:text-2xl text-white mt-3 sm:mt-2 md:mt-5">Start your education with us</h1>
           <Button
@@ -34,9 +35,8 @@ export default function Home() {
             </svg>
           </Button>
         </div>
-        <img className="rounded-2xl border-white border-4" src="/cover.webp" alt="Cover Image" />
       </div>
-      <InfoSection />
+      <AboutUsSection />
     </main>
   );
 }
