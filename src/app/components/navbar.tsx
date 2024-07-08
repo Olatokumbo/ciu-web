@@ -53,7 +53,8 @@ export function StickyNavbar() {
                 </Typography>
                 <div className="flex items-center gap-4">
                     <div className="mr-4 hidden lg:block"><ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
-                        {navMap.map(({ title, href }) => <Typography
+                        {navMap.map(({ title, href }, index) => <Typography
+                            key={index}
                             as="li"
                             variant="small"
                             className="p-1 font-bold"
@@ -104,7 +105,8 @@ export function StickyNavbar() {
             </div>
             <MobileNav open={openNav}>
                 <div className="mr-4"><ul className="mt-2 mb-4 flex flex-row justify-between lg:gap-6 text-white">
-                    {navMap.map(({ title, href }) => <Typography
+                    {navMap.map(({ title, href }, index) => <Typography
+                        key={index}
                         as="li"
                         variant="small"
                         className="p-1 font-bold"
