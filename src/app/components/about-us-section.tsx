@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const AboutUsSection = () => {
     return (
-        <div className="my-16 px-0 lg:px-14 text-white">
+        <div className="my-16 px-0 lg:px-14 text-[#042260] max-w-screen-2xl mx-auto">
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
-                <div className="w-full lg:w-3/5 bg-[#003334] p-8 rounded-lg border-4 border-white">
+                <div className="w-full lg:w-3/5 rounded-lg border-4 border-white">
                     <h1 className="text-3xl lg:text-4xl font-bold mb-4">About Us</h1>
                     <p className="text-lg lg:text-xl mb-6">
                         Crystal International University <b>(CIU)</b> is a leading institution

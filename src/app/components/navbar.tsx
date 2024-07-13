@@ -7,6 +7,7 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import Image from "next/image";
+import { primaryColor } from "../../../constant";
 
 export function StickyNavbar() {
     const [openNav, setOpenNav] = useState<boolean>(false);
@@ -33,7 +34,7 @@ export function StickyNavbar() {
     }]
 
     return (
-        <Navbar color="blue" shadow={false} className="top-0 z-50 h-max max-w-full rounded-none py-2 px-1 lg:py-2 bg-[#003334] border-[#003334]">
+        <Navbar color="transparent" shadow={false} className="top-0 z-50 h-max max-w-full rounded-none py-2 px-1 lg:py-2">
             <div className="flex flex-row justify-between items-center max-w-[60rem] m-auto">
                 <Typography
                     as="a"
@@ -41,18 +42,18 @@ export function StickyNavbar() {
                     className="mr-4 cursor-pointer py-1.5 font-extrabold text-lg"
                 >
                     <Image
-                        src="/logo.png"
+                        src="/ciu_logo.png"
                         alt="Background Image"
-                        width={500}
-                        height={300}
+                        width={700}
+                        height={500}
                         style={{
-                            width: '10%',
+                            width: '12%',
                             height: 'auto',
                         }}
                     />
                 </Typography>
                 <div className="flex items-center gap-4">
-                    <div className="mr-4 hidden lg:block"><ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
+                    <div className="mr-4 hidden lg:block"><ul className={`mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-[${primaryColor}]`}>
                         {navMap.map(({ title, href }, index) => <Typography
                             key={index}
                             as="li"
@@ -76,7 +77,7 @@ export function StickyNavbar() {
                                 fill="none"
                                 className="h-6 w-6"
                                 viewBox="0 0 24 24"
-                                stroke="currentColor"
+                                stroke={primaryColor}
                                 strokeWidth={2}
                             >
                                 <path
@@ -90,7 +91,7 @@ export function StickyNavbar() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-6 w-6"
                                 fill="none"
-                                stroke="currentColor"
+                                stroke={primaryColor}
                                 strokeWidth={2}
                             >
                                 <path
@@ -104,7 +105,7 @@ export function StickyNavbar() {
                 </div>
             </div>
             <MobileNav open={openNav}>
-                <div className="mr-4"><ul className="mt-2 mb-4 flex flex-row justify-between lg:gap-6 text-white">
+                <div className="mr-4"><ul className={`mt-2 mb-4 flex flex-row justify-evenly lg:gap-6 text-[${primaryColor}]`}>
                     {navMap.map(({ title, href }, index) => <Typography
                         key={index}
                         as="li"
