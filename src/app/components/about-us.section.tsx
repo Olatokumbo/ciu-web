@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const AboutUsSection = () => {
     return (
-        <div className="my-16 px-0 lg:px-14 text-[#042260] max-w-screen-2xl mx-auto">
+        <div className="my-16 px-5 lg:px-0 text-[#042260] max-w-screen-2xl mx-auto">
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
-                <div className="w-full lg:w-3/5 rounded-lg border-4 border-white">
+                <div className="w-full lg:w-3/5 rounded-lg">
                     <h1 className="text-3xl lg:text-4xl font-bold mb-4">About Us</h1>
                     <p className="text-lg lg:text-xl mb-6">
                         Crystal International University <b>(CIU)</b> is a leading institution
@@ -15,7 +15,7 @@ const AboutUsSection = () => {
                     </p>
                     <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
                         <div className="lg:w-1/2">
-                            <h2 className="text-2xl font-semibold mb-2">Mission:</h2>
+                            <h2 className="text-2xl font-semibold mb-2">Mission</h2>
                             <p>
                                 To empower students with knowledge, skills, and values that
                                 will enable them to excel in their careers and contribute
@@ -23,7 +23,7 @@ const AboutUsSection = () => {
                             </p>
                         </div>
                         <div className="lg:w-1/2">
-                            <h2 className="text-2xl font-semibold mb-2">Vision:</h2>
+                            <h2 className="text-2xl font-semibold mb-2">Vision</h2>
                             <p>
                                 To be recognized as a premier international university that
                                 cultivates leaders, innovators, and responsible global citizens.

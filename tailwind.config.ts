@@ -9,6 +9,12 @@ const config = withMT({
   ],
   theme: {
     extend: {
+      flex: {
+        '1': 1,
+        '2': 2,
+        '3': 3,
+        // Add more custom flex-grow values if needed
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -18,4 +24,5 @@ const config = withMT({
   },
   plugins: [],
 });
+
 export default config;

@@ -20,21 +20,12 @@ export function StickyNavbar() {
     }, []);
 
     const navMap = [{
-        title: "COURSES",
-        href: "#"
-    }, {
-        title: "STUDY",
-        href: "#"
-    }, {
-        title: "RESEARCH",
-        href: "#"
-    }, {
-        title: "CONTACT",
+        title: "CONTACT US",
         href: "#"
     }]
 
     return (
-        <Navbar color="transparent" shadow={false} className="top-0 z-50 h-max max-w-full rounded-none py-2 px-1 lg:py-2">
+        <Navbar color="transparent" shadow={false} className="top-0 z-50 h-max max-w-full rounded-none py-2 px-5 lg:py-2">
             <div className="flex flex-row justify-between items-center max-w-[60rem] m-auto">
                 <Typography
                     as="a"
@@ -44,10 +35,10 @@ export function StickyNavbar() {
                     <Image
                         src="/ciu_logo.png"
                         alt="Background Image"
-                        width={700}
-                        height={500}
+                        width={60}
+                        height={60}
                         style={{
-                            width: '12%',
+                            // width: '11%',
                             height: 'auto',
                         }}
                     />

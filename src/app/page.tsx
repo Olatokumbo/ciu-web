@@ -1,17 +1,16 @@
 'use client';
-import Image from "next/image";
 import { StickyNavbar } from "./components/navbar";
 import { Button } from "@material-tailwind/react";
-import AboutUsSection from "./components/about-us-section";
-import { accentColor, primaryColor, secondaryColor } from "../../constant";
+import AboutUsSection from "./components/about-us.section";
+import FacultySection from "./components/faculty.section";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full min-h-screen px-5 md:px-5 lg:px-14">
+    <main className="flex flex-col w-full min-h-screen ">
       <StickyNavbar />
-      <div className="relative flex items-center justify-center w-full h-full max-w-screen-2xl mx-auto">
+      <div className="relative flex items-center justify-center w-full h-full max-w-screen-2xl mx-auto px-5">
         <img className={`rounded-2xl border-[#d4ad6e] border-4 w-full h-full object-cover`} src="/cover.webp" alt="Cover Image" />
-        <div className={`absolute flex bottom-0 left-0 flex-col items-start w-fit pr-10 py-5 md:py-10 lg:py-16 lg:pr-20 z-10 bg-white rounded-tr-lg border-t-4 border-r-4 border-[#d4ad6e]`}>
+        <div className={`absolute flex bottom-0 left-0 flex-col items-start w-fit pr-10 py-5 md:py-10 lg:py-16 lg:pr-20 z-10 bg-white rounded-tr-lg border-t-4 border-r-4 border-[#d4ad6e] ml-5`}>
           <h1 className="font-bold text-2xl sm:text-3xl md:text-6xl text-[#042260]">Welcome to <span className="text-[#d4ad6e]">CIU</span></h1>
           <h1 className="font-light text-xs md:text-2xl text-[#042260] mt-3 sm:mt-2 md:mt-5">Start your education with us</h1>
           <Button
@@ -38,6 +37,7 @@ export default function Home() {
         </div>
       </div>
       <AboutUsSection />
+      <FacultySection />
     </main>
   );
 }
