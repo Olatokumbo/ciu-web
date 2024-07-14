@@ -23,7 +23,7 @@ const FacultySection = () => {
                             <h2 className="text-2xl font-semibold mb-2">Bachelor’s Degree Programs</h2>
                             <p>Our bachelor’s degree programs are designed to provide a comprehensive education in various fields, preparing students for professional success.</p>
                         </div>
-                        <div className="my-2 flex flex-row">
+                        <div className="my-2 flex md:flex-row flex-col">
                             <Chip title="BSc Computer Studies" />
                             <Chip title="BSc Management Studies" />
                         </div>
@@ -39,7 +39,7 @@ const FacultySection = () => {
                             <h2 className="text-2xl font-semibold mb-2">Advanced Diploma Programs</h2>
                             <p>Our advanced diploma programs offer specialized knowledge and skills in various disciplines, enhancing career opportunities for graduates.</p>
                         </div>
-                        <div className="my-2 flex flex-row">
+                        <div className="my-2 flex sm:flex-row flex-col">
                             <Chip title="AD Computer Science" />
                             <Chip title="AD Management Studies" />
                         </div>
